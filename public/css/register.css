@@ -1,0 +1,118 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #007bff, #00c6ff, #F3A1F3);
+  background-size: 300% 300%;
+  animation: gradientMove 8s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Gradient Animation */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Form Card */
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 2.5rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.form-container:hover {
+  transform: translateY(-4px);
+}
+
+.form-card h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Input Fields */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #eee;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: #f9f9f9;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #7F56D9;
+  box-shadow: 0 0 0 3px rgba(127, 86, 217, 0.2);
+  outline: none;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 14px;
+  background: #7F56D9;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #6842c2;
+  transform: translateY(-2px);
+}
+
+/* Footer Text */
+.form-footer {
+  text-align: center;
+  margin-top: 1.8rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.form-footer a {
+  color: #7F56D9;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.form-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .form-container {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .form-card h2 {
+    font-size: 1.4rem;
+  }
+}

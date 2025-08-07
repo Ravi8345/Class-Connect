@@ -1,0 +1,80 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #007bff, #00c6ff, #F3A1F3);
+  color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+#logoutBtn {
+  display: block;
+  margin: 0 auto 2rem auto;
+  padding: 10px 20px;
+  background-color: #ff4d4d;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#logoutBtn:hover {
+  background-color: #e04343;
+}
+
+#appointmentRequests {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#appointmentRequests li {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  color: #fff;
+}
+
+#appointmentRequests li b {
+  display: inline-block;
+  width: 110px;
+}
+
+#appointmentRequests button {
+  margin-right: 10px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.approveBtn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.approveBtn:hover {
+  background-color: #45a045;
+}
+
+.cancelBtn {
+  background-color: #f44336;
+  color: white;
+}
+
+.cancelBtn:hover {
+  background-color: #d7352e;
+}

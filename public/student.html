@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="css/student.css" />
+</head>
+<body>
+  <h2>Student Dashboard</h2>
+  <button id="logoutBtn">Logout</button>
+
+  <h3>Your Appointments</h3>
+  <ul id="appointmentsList"></ul>
+
+  <h3>Book an Appointment</h3>
+  <form id="appointmentForm">
+    <label for="teacherSelect">Select Teacher:</label>
+    <select id="teacherSelect" required></select><br />
+
+    <label for="date">Date and Time:</label>
+    <input type="datetime-local" id="date" required /><br />
+
+    <label for="purpose">Purpose:</label>
+    <textarea id="purpose" placeholder="Reason for appointment" required></textarea><br />
+
+    <button type="submit">Book Appointment</button>
+  </form>
+
+  <script type="module" src="js/firebase.js"></script>
+  <script type="module" src="js/student.js"></script>
+</body>
+</html>
